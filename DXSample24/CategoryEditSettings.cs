@@ -22,6 +22,8 @@ namespace DXSample24
             this.IsTextEditable = false;
             this.DisplayMember = nameof(CategoryWrapper.DisplayText);
             this.ValueMember = nameof(CategoryWrapper.Value);
+
+            this.SelectItemWithNullValue = true;
         }
 
         private List<CategoryWrapper> Entries { get; }
